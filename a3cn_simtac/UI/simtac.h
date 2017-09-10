@@ -1,11 +1,154 @@
 #include "CustomControlClasses.h"
+
+class mainDisplay  
+{
+	type = 15;
+	idc = -1;
+	style = ST_MULTI;
+    x = 0;
+    y = 0; 
+    w = 1; 
+    h = 1;
+	shadow=0;
+    class Controls{};
+};
+
+
 class simtac
 {
 	idd = 5000;
 	
 	class ControlsBackground
 	{
-		class backgroundWindow
+		
+        class satcom_module:mainDisplay
+        {
+            x = safeZoneX + safeZoneW * -0.00625;
+            y = safeZoneY + safeZoneH * 0.10777778;
+            w = safeZoneW * 0.80625;
+            h = safeZoneH * 0.90111112;
+            borderSize = 0;
+            // colorBackground[] = {0,0,0,1};
+
+            class Controls 
+            {
+                
+                class satcomEffect
+                {
+                    type = 0;
+                    idc = -1;
+                    x = safeZoneX + safeZoneW - 1.7;
+                    y = safeZoneY + safeZoneH * 0.22;
+                    w = safeZoneW * 0.80625;
+                    h = safeZoneH * 0.90111112;			
+                    style = 48;
+                    text = "a3cn_simtac\UI\satcom_effect_vignette_v2.paa";
+                    colorBackground[] = {0,0,0,0.3};
+                    colorText[] = {0.4157,0.5059,0.3333,1};
+                    font = "PuristaMedium";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+                };
+                class displayGRIDTitle
+                {
+                    type = 0;
+                    idc = -1;
+                    x = safeZoneX + safeZoneW - 1.67; 
+                    y = safeZoneY + safeZoneH;
+                    w = safeZoneW * 0.03625;
+                    h = safeZoneH * 0.03666667;
+                    style = 0+2;
+                    text = "GRID";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "LucidaConsoleB";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.5);
+                    
+                };
+                class displayGRID
+                {
+                    type = 0;
+                    idc = 1091;
+                    x = safeZoneX + safeZoneW - 1.67;
+                    y = safeZoneY + safeZoneH + 0.07;
+                    w = safeZoneW * 0.0875;
+                    h = safeZoneH * 0.06111112;
+                    style = 0+2;
+                    text = "123456";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "EtelkaMonospacePro";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+                    
+                };
+                class displayVMODETitle
+                {
+                    type = 0;
+                    idc = -1;
+                    x = safeZoneX + safeZoneW - 1.4; 
+                    y = safeZoneY + safeZoneH;
+                    w = safeZoneW * 0.048125;
+                    h = safeZoneH * 0.03666667;
+                    style = 0+2;
+                    text = "V-MODE";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "LucidaConsoleB";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.5);
+                    
+                };
+                class displayVMODE
+                {
+                    type = 0;
+                    idc = 1090;
+                    x = safeZoneX + safeZoneW - 1.4; 
+                    y = safeZoneY + safeZoneH + 0.07;
+                    w = safeZoneW * 0.0875;
+                    h = safeZoneH * 0.06111112;
+                    style = 0+2;
+                    text = "NRM";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "EtelkaMonospacePro";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+                    
+                };
+                class displayORBITAL
+                {
+                    type = 0;
+                    idc = -1;
+                    x = safeZoneX + safeZoneW - 0.05; 
+                    y = safeZoneY + safeZoneH + 0.07;
+                    w = safeZoneW * 0.109375;
+                    h = safeZoneH * 0.06111112;
+                    style = 0+2;
+                    text = "00:23:30";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "EtelkaMonospacePro";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+                    
+                };
+                class displayORBITALTitle
+                {
+                    type = 0;
+                    idc = -1;
+                    x = safeZoneX + safeZoneW - 0.05; 
+                    y = safeZoneY + safeZoneH;
+                    w = safeZoneW * 0.073125;
+                    h = safeZoneH * 0.03666667;
+                    style = 0+2;
+                    text = "ORBITAL WINDOW";
+                    colorBackground[] = {0,0,0,1};
+                    colorText[] = {1,1,1,1};
+                    font = "LucidaConsoleB";
+                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.5);
+                    
+                };
+            };
+        };
+        
+        
+        class backgroundWindow
 		{
 		     type = 0;
 		     idc = 3000;
@@ -344,7 +487,7 @@ class simtac
 			w = safeZoneW * 0.18359375;
 			h = safeZoneH * 0.90111112;			
 		};
-
+        
 	};
 	class Controls
 	{
@@ -854,7 +997,7 @@ class simtac
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[2] call simtac_fnc_adjustCamera; camUseNVG true";
+			onButtonClick = "[6] call simtac_fnc_adjustCamera; camUseNVG true";
 
 
 		};

@@ -17,6 +17,14 @@ if (_type == 2) then
 	PXS_ppGrain ppEffectCommit 0;
 
 };
+if (_type == 6) then
+{
+	PXS_ppGrain = ppEffectCreate ["filmGrain",2005];
+	PXS_ppGrain ppEffectEnable true;
+	PXS_ppGrain ppEffectAdjust [0.02,1,1,0,1];
+	PXS_ppGrain ppEffectCommit 0;
+
+};
 
 
 // FLIR setting
@@ -37,12 +45,14 @@ switch (_type) do
 _text = "";
 switch (_type) do
 {
-	case 3:	{_text = "CMODE T-FLIR";};
-	case 4:	{_text = "CMODE W-FLIR";};
-	case 5:	{_text = "CMODE B-FLIR";};
+	case 3:	{_text = "T-FLIR";};
+	case 4:	{_text = "W-FLIR";};
+	case 5:	{_text = "B-FLIR";};
+    case 6:	{_text = "INFR";};
+
 	default
 	{
-		_text = "CMODE NORMAL";
+		_text = "NRM";
 	};
 };
-ctrlSetText [1005,_text];
+ctrlSetText [1090,_text];
