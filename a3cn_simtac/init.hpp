@@ -22,7 +22,6 @@ class CfgFunctions
             class coordinatesFunction{};
             class coordinatesView{};
             class adjustCamera{};
-            class closeCamera{};
             class viewSatellite{};
             class keyFunction{};
             class mouseZChanged{};

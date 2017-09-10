@@ -10,7 +10,7 @@ switch (_keyCode) do
 {
 	case 1://ESC
 	{
-		call simtac_fnc_closeCamera;
+		call simtac_fnc_terminateSimTac;
 	};
 	case 2://1 normal view
 	{
