@@ -10,7 +10,7 @@ Todas as sugestões devem ser direcionadas ao Trello para deixar o projeto mais 
 ## Como baixar
 Baixe o conteúdo deste repositório em sua pasta de missões do Arma 3.  
 
-Para isso, crie manualmente uma pasta chamada `a3cn_simtac.Startis` ou, de preferência, utilize o **GIT** para fazer o clone deste repositório.  
+Para isso, crie manualmente uma pasta chamada `a3cn_simtac.Stratis` ou, de preferência, utilize o **GIT** para fazer o clone deste repositório.  
 
 Para clonar, com o **GIT** já instalado em seu computador e usando o **Prompt de Comando**, vá até a pasta missions do seu profile ativo (ex: `Documents\Arma 3 - Other Profiles\Cpl.Toaster\missions`) e digite: 
 
