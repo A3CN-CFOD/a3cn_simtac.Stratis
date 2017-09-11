@@ -24,9 +24,9 @@ class simtac
         class satcom_module:mainDisplay
         {
             x = safeZoneX + safeZoneW * -0.00625;
-            y = safeZoneY + safeZoneH * 0.10777778;
-            w = safeZoneW * 0.80625;
-            h = safeZoneH * 0.90111112;
+			y = safeZoneY + 0.0549;
+            w = safeZoneW+0.02;
+			h = safeZoneH;
             borderSize = 0;
             // colorBackground[] = {0,0,0,1};
 
@@ -39,11 +39,11 @@ class simtac
                     idc = -1;
                     x = safeZoneX + safeZoneW - 1.7;
                     y = safeZoneY + safeZoneH * 0.22;
-                    w = safeZoneW * 0.80625;
-                    h = safeZoneH * 0.90111112;			
+                    w = safeZoneW * 1;
+                    h = safeZoneH * 1;			
                     style = 48;
                     text = "a3cn_simtac\UI\satcom_effect_vignette_v2.paa";
-                    colorBackground[] = {0,0,0,0.3};
+                    colorBackground[] = {0,0,0,1};
                     colorText[] = {0.4157,0.5059,0.3333,1};
                     font = "PuristaMedium";
                     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
@@ -150,36 +150,35 @@ class simtac
         
         class backgroundWindow
 		{
-		     type = 0;
-		     idc = 3000;
+            type = 0;
+            idc = 3000;
             x = safeZoneX + safeZoneW * -0.00625;
-			y = safeZoneY + safeZoneH * 0.1375;
-			w = safeZoneW * 0.80625;
-			h = safeZoneH * 0.87111112;			
-             style = 0;
-		     text = "";
-		     colorBackground[] = {0.8,0.8,0.8,1};
-		     colorText[] = {0.4157,0.5059,0.3333,1};
-		     font = "PuristaMedium";
-		     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-		
-		 };
-        class rightBackgroundWindow
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.8;
-            y = safeZoneY + safeZoneH * 0;
-			w = safeZoneW * 0.2125;
-			h = safeZoneH * 1;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.8,0.8,0.8,1};
-			colorText[] = {0.4157,0.5059,0.3333,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
+            y = safeZoneY + 0.0549;
+            w = safeZoneW+0.02;
+            h = safeZoneH;
+            style = 0;
+            text = "";
+            colorBackground[] = {0.102, 0.102, 0.102, 1};
+            colorText[] = {0.4157,0.5059,0.3333,1};
+            font = "PuristaMedium";
+            sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+        };
+        /* class rightBackgroundWindow */
+		// {
+		//     type = 0;
+		//     idc = -1;
+		//     x = safeZoneX + safeZoneW * 0.8;
+        //     y = safeZoneY + safeZoneH * 0;
+		//     w = safeZoneW * 0.2125;
+		//     h = safeZoneH * 1;
+		//     style = 0;
+		//     text = "";
+		//     colorBackground[] = {0.102, 0.102, 0.102, 1};
+		//     colorText[] = {0.4157,0.5059,0.3333,1};
+		//     font = "PuristaMedium";
+		//     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+		//
+		/* }; */
 		class titleWindow
 		{
 			type = 0;
@@ -187,31 +186,31 @@ class simtac
 			x = safeZoneX + safeZoneW * -0.00625;
 			y = safeZoneY + safeZoneH * 0;
 			w = safeZoneW * 1.0125;
-			h = safeZoneH * 0.05;
+			h = safeZoneH * 0.035;
 			style = 0;
 			text = "   A3CN Sim Tac";
-			colorBackground[] = {0,0.102,0.502,1};
+			colorBackground[] = {0.0824, 0.7725, 0.9255, 1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class navbar
-		{
-			type = 0;
-			idc = -1;
-			x = safeZoneX + safeZoneW * -0.03125;
-			y = safeZoneY + safeZoneH * 0.05;
-			w = safeZoneW * 1.0375;
-			h = safeZoneH * 0.05888889;
-            style = 0;
-			text = "";
-			colorBackground[] = {0.8,0.8,0.8,1};
-			colorText[] = {0.2431,0.7922,0.1137,1};
-			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
-		};
+		/* class navbar */
+		// {
+		//     type = 0;
+		//     idc = -1;
+		//     x = safeZoneX + safeZoneW * -0.03125;
+		//     y = safeZoneY + safeZoneH * 0.05;
+		//     w = safeZoneW * 1.0375;
+		//     h = safeZoneH * 0.05888889;
+        //     style = 0;
+		//     text = "";
+		//     colorBackground[] = {0.102, 0.102, 0.102, 1};
+		//     colorText[] = {0.2431,0.7922,0.1137,1};
+		//     font = "PuristaMedium";
+		//     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+		//
+		/* }; */
         class satWindow
 		{
 			access = 0;
@@ -224,21 +223,32 @@ class simtac
             onMouseButtonDblClick = "_this call simtac_fnc_startSatellite";
 
             
-            colorBackground[] = {1.00, 1.00, 1.00, 1.00};
-            colorSea[] = {0.56, 0.80, 0.98, 0.50};
-            colorForest[] = {0.60, 0.80, 0.20, 0.50};
-            colorRocks[] = {0.50, 0.50, 0.50, 0.50};
-            colorCountlines[] = {0.65, 0.45, 0.27, 0.50};
-            colorMainCountlines[] = {0.65, 0.45, 0.27, 1.00};
-            colorCountlinesWater[] = {0.00, 0.53, 1.00, 0.50};
-            colorMainCountlinesWater[] = {0.00, 0.53, 1.00, 1.00};
-            colorForestBorder[] = {0.40, 0.80, 0.00, 1.00};
-            colorRocksBorder[] = {0.50, 0.50, 0.50, 1.00};
-            colorPowerLines[] = {0.00, 0.00, 0.00, 1.00};
-            colorNames[] = {0.00, 0.00, 0.00, 1.00};
-            colorInactive[] = {1.00, 1.00, 1.00, 0.50};
-            colorLevels[] = {0.00, 0.00, 0.00, 1.00};
+            colorTracks[] = {0.2627, 1, 0.9765, 1};
+            colorTracksFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRoads[] = {0.2627, 1, 0.9765, 1};
+            colorRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorMainRoads[] = {0.2627, 1, 0.9765, 1};
+            colorMainRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRailWay[] = {0.8,0.2,0,1};
 
+            colorBackground[] =  {0.2275, 0.2549, 0.3255, 1};
+            colorOutside[] = {0.102, 0.102, 0.102, 1};
+            colorSea[] = {0.102, 0.102, 0.102, 1};
+
+            
+            colorMainCountlines[] = {0.102, 0.102, 0.102, 1};
+            colorCountlines[] = {0.1451, 0.1608, 0.2157, 1};
+            colorMainCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+            colorCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+
+
+            colorForest[] = {0.6, 0.8, 0.2, 0.1};
+            colorForestBorder[] = {0,1,0,0.25};
+            colorLevels[] = {0.0, 0.0, 0.0, 0.5};
+            colorRocks[] = {0.50, 0.50, 0.50, 0};
+
+            colorGrid[] = {0.3961, 0.4235, 0.5176, 1};
+            colorGridMap[] = {0.3216, 0.3608, 0.4627, 1};
 
 
             ptsPerSquareSea = 5;
@@ -248,21 +258,24 @@ class simtac
             ptsPerSquareCost = 10;
             ptsPerSquareFor = 9;
             ptsPerSquareForEdge = 9;
-            ptsPerSquareRoad = 6;
-            ptsPerSquareObj = 9;
             showCountourInterval = 0;
             scaleMin = 0.001;
             scaleMax = 1;
             scaleDefault = 0.16;
-            maxSatelliteAlpha = 0.85;
-            alphaFadeStartScale = 0.35;
-            alphaFadeEndScale = 0.4;
+
+            drawObjects = 0;
+            maxSatelliteAlpha = 0;
+            alphaFadeStartScale = 100;
+            alphaFadeEndScale = 100;
+            ptsPerSquareRoad = 0.75;
+            ptsPerSquareObj = 9;
+
             SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             x = safeZoneX + safeZoneW * -0.00625;
-			y = safeZoneY + safeZoneH * 0.10777778;
-            w = safeZoneW * 0.80625;
-			h = safeZoneH * 0.90111112;
-
+			y = safeZoneY + 0.0549;
+            w = safeZoneW+0.02;
+			h = safeZoneH;
+            
             fontLabel = "PuristaMedium";
             sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
             fontGrid = "TahomaB";
@@ -292,21 +305,33 @@ class simtac
 
             onMouseButtonDblClick = "_this call simtac_fnc_createNewUAV";
             
-            colorBackground[] = {1.00, 1.00, 1.00, 1.00};
-            colorSea[] = {0.56, 0.80, 0.98, 0.50};
-            colorForest[] = {0.60, 0.80, 0.20, 0.50};
-            colorRocks[] = {0.50, 0.50, 0.50, 0.50};
-            colorCountlines[] = {0.65, 0.45, 0.27, 0.50};
-            colorMainCountlines[] = {0.65, 0.45, 0.27, 1.00};
-            colorCountlinesWater[] = {0.00, 0.53, 1.00, 0.50};
-            colorMainCountlinesWater[] = {0.00, 0.53, 1.00, 1.00};
-            colorForestBorder[] = {0.40, 0.80, 0.00, 1.00};
-            colorRocksBorder[] = {0.50, 0.50, 0.50, 1.00};
-            colorPowerLines[] = {0.00, 0.00, 0.00, 1.00};
-            colorNames[] = {0.00, 0.00, 0.00, 1.00};
-            colorInactive[] = {1.00, 1.00, 1.00, 0.50};
-            colorLevels[] = {0.00, 0.00, 0.00, 1.00};
 
+            colorTracks[] = {0.2627, 1, 0.9765, 1};
+            colorTracksFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRoads[] = {0.2627, 1, 0.9765, 1};
+            colorRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorMainRoads[] = {0.2627, 1, 0.9765, 1};
+            colorMainRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRailWay[] = {0.8,0.2,0,1};
+
+            colorBackground[] =  {0.2275, 0.2549, 0.3255, 1};
+            colorOutside[] = {0.102, 0.102, 0.102, 1};
+            colorSea[] = {0.102, 0.102, 0.102, 1};
+
+            
+            colorMainCountlines[] = {0.102, 0.102, 0.102, 1};
+            colorCountlines[] = {0.1451, 0.1608, 0.2157, 1};
+            colorMainCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+            colorCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+
+
+            colorForest[] = {0.6, 0.8, 0.2, 0.1};
+            colorForestBorder[] = {0,1,0,0.25};
+            colorLevels[] = {0.0, 0.0, 0.0, 0.5};
+            colorRocks[] = {0.50, 0.50, 0.50, 0};
+
+            colorGrid[] = {0.3961, 0.4235, 0.5176, 1};
+            colorGridMap[] = {0.3216, 0.3608, 0.4627, 1};
 
 
             ptsPerSquareSea = 5;
@@ -316,20 +341,23 @@ class simtac
             ptsPerSquareCost = 10;
             ptsPerSquareFor = 9;
             ptsPerSquareForEdge = 9;
-            ptsPerSquareRoad = 6;
-            ptsPerSquareObj = 9;
             showCountourInterval = 0;
             scaleMin = 0.001;
             scaleMax = 1;
             scaleDefault = 0.16;
-            maxSatelliteAlpha = 0.85;
-            alphaFadeStartScale = 0.35;
-            alphaFadeEndScale = 0.4;
+
+            drawObjects = 1;
+            maxSatelliteAlpha = 0;
+            alphaFadeStartScale = 100;
+            alphaFadeEndScale = 100;
+            ptsPerSquareRoad = 0.75;
+            ptsPerSquareObj = 9;
+
             SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             x = safeZoneX + safeZoneW * -0.00625;
-			y = safeZoneY + safeZoneH * 0.10777778;
-            w = safeZoneW * 0.80625;
-			h = safeZoneH * 0.90111112;
+			y = safeZoneY + 0.0549;
+            w = safeZoneW+0.02;
+			h = safeZoneH;
             
             fontLabel = "PuristaMedium";
             sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
@@ -359,21 +387,32 @@ class simtac
             moveOnEdges = 1;
             shadow = 0;
             
-            colorBackground[] = {1.00, 1.00, 1.00, 1.00};
-            colorSea[] = {0.56, 0.80, 0.98, 0.50};
-            colorForest[] = {0.60, 0.80, 0.20, 0.50};
-            colorRocks[] = {0.50, 0.50, 0.50, 0.50};
-            colorCountlines[] = {0.65, 0.45, 0.27, 0.50};
-            colorMainCountlines[] = {0.65, 0.45, 0.27, 1.00};
-            colorCountlinesWater[] = {0.00, 0.53, 1.00, 0.50};
-            colorMainCountlinesWater[] = {0.00, 0.53, 1.00, 1.00};
-            colorForestBorder[] = {0.40, 0.80, 0.00, 1.00};
-            colorRocksBorder[] = {0.50, 0.50, 0.50, 1.00};
-            colorPowerLines[] = {0.00, 0.00, 0.00, 1.00};
-            colorNames[] = {0.00, 0.00, 0.00, 1.00};
-            colorInactive[] = {1.00, 1.00, 1.00, 0.50};
-            colorLevels[] = {0.00, 0.00, 0.00, 1.00};
+            colorTracks[] = {0.2627, 1, 0.9765, 1};
+            colorTracksFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRoads[] = {0.2627, 1, 0.9765, 1};
+            colorRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorMainRoads[] = {0.2627, 1, 0.9765, 1};
+            colorMainRoadsFill[] = {0.3961, 0.4235, 0.5176, 1};
+            colorRailWay[] = {0.8,0.2,0,1};
 
+            colorBackground[] =  {0.2275, 0.2549, 0.3255, 1};
+            colorOutside[] = {0.102, 0.102, 0.102, 1};
+            colorSea[] = {0.102, 0.102, 0.102, 1};
+
+            
+            colorMainCountlines[] = {0.102, 0.102, 0.102, 1};
+            colorCountlines[] = {0.1451, 0.1608, 0.2157, 1};
+            colorMainCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+            colorCountlinesWater[] = {0.1451, 0.1608, 0.2157, 1};
+
+
+            colorForest[] = {0.6, 0.8, 0.2, 0.1};
+            colorForestBorder[] = {0,1,0,0.25};
+            colorLevels[] = {0.0, 0.0, 0.0, 0.5};
+            colorRocks[] = {0.50, 0.50, 0.50, 0};
+
+            colorGrid[] = {0.3961, 0.4235, 0.5176, 1};
+            colorGridMap[] = {0.3216, 0.3608, 0.4627, 1};
 
 
             ptsPerSquareSea = 5;
@@ -383,21 +422,24 @@ class simtac
             ptsPerSquareCost = 10;
             ptsPerSquareFor = 9;
             ptsPerSquareForEdge = 9;
-            ptsPerSquareRoad = 6;
-            ptsPerSquareObj = 9;
             showCountourInterval = 0;
             scaleMin = 0.001;
             scaleMax = 1;
             scaleDefault = 0.16;
-            maxSatelliteAlpha = 0.85;
-            alphaFadeStartScale = 0.35;
-            alphaFadeEndScale = 0.4;
+
+            drawObjects = 0;
+            maxSatelliteAlpha = 0;
+            alphaFadeStartScale = 100;
+            alphaFadeEndScale = 100;
+            ptsPerSquareRoad = 0.75;
+            ptsPerSquareObj = 9;
+
             SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
             x = safeZoneX + safeZoneW * -0.00625;
-			y = safeZoneY + safeZoneH * 0.10777778;
-            w = safeZoneW * 0.80625;
-			h = safeZoneH * 0.90111112;
-
+			y = safeZoneY + 0.0549;
+            w = safeZoneW+0.02;
+			h = safeZoneH;
+            
             fontLabel = "PuristaMedium";
             sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
             fontGrid = "TahomaB";
@@ -416,77 +458,77 @@ class simtac
 
 			
 		};
-        class mapRightWindow
-		{
-            access = 0;
-            idc = -1;
-            type = 101;
-            style = 48;
-            
-            moveOnEdges = 1;
-            shadow = 0;
-            ptsPerSquareSea = 5;
-            ptsPerSquareTxt = 3;
-            ptsPerSquareCLn = 10;
-            ptsPerSquareExp = 10;
-            ptsPerSquareCost = 10;
-            ptsPerSquareFor = 9;
-            ptsPerSquareForEdge = 9;
-            ptsPerSquareRoad = 6;
-            ptsPerSquareObj = 9;
-            showCountourInterval = 0;
-            scaleMin = 0.001;
-            scaleMax = 1;
-            scaleDefault = 0.16;
-            maxSatelliteAlpha = 0.85;
-            alphaFadeStartScale = 0.35;
-            alphaFadeEndScale = 0.4;
-            colorBackground[] = {0.969,0.957,0.949,1};
-            colorSea[] = {0.467,0.631,0.851,0.5};
-            colorForest[] = {0.4,1,0.4,0.3};
-            colorForestBorder[] = {0,0,0,0};
-            colorRocks[] = {0,0,0,0.3};
-            colorRocksBorder[] = {0,0,0,0};
-            colorLevels[] = {0,0,0,1};
-            colorMainCountlines[] = {1,0,0,1};
-            colorCountlines[] = {1,0,0,0.5};
-            colorMainCountlinesWater[] = {0.491,0.577,0.702,0.6};
-            colorCountlinesWater[] = {0.491,0.577,0.702,0.3};
-            colorPowerLines[] = {0.1,0.1,0.1,1};
-            colorRailWay[] = {0.8,0.2,0,1};
-            colorNames[] = {0,0,0,1};
-            colorInactive[] = {1,1,1,0.5};
-            colorOutside[] = {0.5,0.5,0.5,1};
-            colorTracks[] = {0.84,0.76,0.65,1};
-            colorTracksFill[] = {0.84,0.76,0.65,1};
-            colorRoads[] = {1,0.8,0,1};
-            colorRoadsFill[] = {1,0.8,0,1};
-            colorMainRoads[] = {1,0.6,0.4,1};
-            colorMainRoadsFill[] = {1,0.6,0.4,1};
-            colorGrid[] = {0.1,0.1,0.1,0.6};
-            colorGridMap[] = {0.1,0.1,0.1,0.6};
-            fontLabel = "PuristaMedium";
-            sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-            fontGrid = "TahomaB";
-            sizeExGrid = 0.02;
-            fontUnits = "TahomaB";
-            sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-            fontNames = "PuristaMedium";
-            sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
-            fontInfo = "PuristaMedium";
-            sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-            fontLevel = "TahomaB";
-            sizeExLevel = 0.02;
-            colorText[] = {1,1,1,1};
-            font = "PuristaMedium";
-            text = "#(argb,8,8,3)color(1,1,1,1)";
-            SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-            
-            x = safeZoneX + safeZoneW * 0.80859375;
-			y = safeZoneY + safeZoneH * 0.69027778;
-			w = safeZoneW * 0.18359375;
-			h = safeZoneH * 0.90111112;			
-		};
+        /* class mapRightWindow */
+		// {
+        //     access = 0;
+        //     idc = -1;
+        //     type = 101;
+        //     style = 48;
+        //
+        //     moveOnEdges = 1;
+        //     shadow = 0;
+        //     ptsPerSquareSea = 5;
+        //     ptsPerSquareTxt = 3;
+        //     ptsPerSquareCLn = 10;
+        //     ptsPerSquareExp = 10;
+        //     ptsPerSquareCost = 10;
+        //     ptsPerSquareFor = 9;
+        //     ptsPerSquareForEdge = 9;
+        //     ptsPerSquareRoad = 6;
+        //     ptsPerSquareObj = 9;
+        //     showCountourInterval = 0;
+        //     scaleMin = 0.001;
+        //     scaleMax = 1;
+        //     scaleDefault = 0.16;
+        //     maxSatelliteAlpha = 0.85;
+        //     alphaFadeStartScale = 0.35;
+        //     alphaFadeEndScale = 0.4;
+        //     colorBackground[] = {0.969,0.957,0.949,1};
+        //     colorSea[] = {0.467,0.631,0.851,0.5};
+        //     colorForest[] = {0.4,1,0.4,0.3};
+        //     colorForestBorder[] = {0,0,0,0};
+        //     colorRocks[] = {0,0,0,0.3};
+        //     colorRocksBorder[] = {0,0,0,0};
+        //     colorLevels[] = {0,0,0,1};
+        //     colorMainCountlines[] = {1,0,0,1};
+        //     colorCountlines[] = {1,0,0,0.5};
+        //     colorMainCountlinesWater[] = {0.491,0.577,0.702,0.6};
+        //     colorCountlinesWater[] = {0.491,0.577,0.702,0.3};
+        //     colorPowerLines[] = {0.1,0.1,0.1,1};
+        //     colorRailWay[] = {0.8,0.2,0,1};
+        //     colorNames[] = {0,0,0,1};
+        //     colorInactive[] = {1,1,1,0.5};
+        //     colorOutside[] = {0.5,0.5,0.5,1};
+        //     colorTracks[] = {0.84,0.76,0.65,1};
+        //     colorTracksFill[] = {0.84,0.76,0.65,1};
+        //     colorRoads[] = {1,0.8,0,1};
+        //     colorRoadsFill[] = {1,0.8,0,1};
+        //     colorMainRoads[] = {1,0.6,0.4,1};
+        //     colorMainRoadsFill[] = {1,0.6,0.4,1};
+        //     colorGrid[] = {0.1,0.1,0.1,0.6};
+        //     colorGridMap[] = {0.1,0.1,0.1,0.6};
+        //     fontLabel = "PuristaMedium";
+        //     sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+        //     fontGrid = "TahomaB";
+        //     sizeExGrid = 0.02;
+        //     fontUnits = "TahomaB";
+        //     sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+        //     fontNames = "PuristaMedium";
+        //     sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
+        //     fontInfo = "PuristaMedium";
+        //     sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+        //     fontLevel = "TahomaB";
+        //     sizeExLevel = 0.02;
+        //     colorText[] = {1,1,1,1};
+        //     font = "PuristaMedium";
+        //     text = "#(argb,8,8,3)color(1,1,1,1)";
+        //     SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+        //
+        //     x = safeZoneX + safeZoneW * 0.80859375;
+		//     y = safeZoneY + safeZoneH * 0.69027778;
+		//     w = safeZoneW * 0.18359375;
+		//     h = safeZoneH * 0.90111112;
+		/* }; */
         
 	};
 	class Controls
@@ -501,20 +543,20 @@ class simtac
 			h = safeZoneH * 0.04444445;
 			style = 0+2;
 			text = "UAV";
-			borderSize = 0;
-			colorBackground[] = {0.6762,0.6762,0.6762,1};
-			colorBackgroundActive[] = {1,1,1,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
+			borderSize = 0.01;
+			colorBackground[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundActive[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundDisabled[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBorder[] = {1, 0.502, 0.2078, 1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
-			colorText[] = {0,0,0,1};
+			colorText[] = {1, 0.502, 0.2078, 1};
 			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.002;
-			offsetY = 0.002;
+			offsetPressedX = 0.002;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
@@ -534,20 +576,20 @@ class simtac
 			h = safeZoneH * 0.04444445;
 			style = 0+2;
 			text = "NAV";
-			borderSize = 0;
-			colorBackground[] = {0.6762,0.6762,0.6762,1};
-			colorBackgroundActive[] = {1,1,1,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
+            borderSize = 0.01;
+			colorBackground[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundActive[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundDisabled[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBorder[] = {1, 0.502, 0.2078, 1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
-			colorText[] = {0,0,0,1};
+			colorText[] = {1, 0.502, 0.2078, 1};
 			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.002;
-			offsetY = 0.002;
+			offsetPressedX = 0.002;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
@@ -566,20 +608,20 @@ class simtac
 			h = safeZoneH * 0.04444445;
 			style = 0+2;
 			text = "SAT";
-			borderSize = 0;
-			colorBackground[] = {0.6762,0.6762,0.6762,1};
-			colorBackgroundActive[] = {1,1,1,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
+			borderSize = 0.01;
+			colorBackground[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundActive[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBackgroundDisabled[] = {0.1393, 0.1393, 0.1393, 1};
+			colorBorder[] = {1, 0.502, 0.2078, 1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
-			colorText[] = {0,0,0,1};
+			colorText[] = {1, 0.502, 0.2078, 1};
 			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.002;
-			offsetY = 0.002;
+			offsetPressedX = 0.002;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
@@ -592,10 +634,10 @@ class simtac
 		{
 			type = 1;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.978125;
-			y = safeZoneY + safeZoneH * 0.01111112;
+			x = safeZoneX + safeZoneW * 0.979375;
+			y = safeZoneY + safeZoneH * 0.00333334;
 			w = safeZoneW * 0.01875;
-			h = safeZoneH * 0.03472223;
+			h = safeZoneH * 0.02333334;
 			style = 0+2;
 			text = "x";
 			borderSize = 0;
