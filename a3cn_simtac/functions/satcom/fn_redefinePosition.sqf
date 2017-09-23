@@ -1,4 +1,4 @@
-//redefine default satellite position while SATCOM is on
 
-waitUntil {call PXS_closeCamera};
-call PXS_startSatellite;
+PXS_SatelliteTarget setPos (getPos player);
+call simtac_fnc_updateCamera;
+

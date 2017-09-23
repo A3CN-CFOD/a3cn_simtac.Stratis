@@ -112,38 +112,38 @@ class simtac
                     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
                     
                 };
-                class displayORBITAL
-                {
-                    type = 0;
-                    idc = -1;
-                    x = safeZoneX + safeZoneW + 0.43; 
-                    y = safeZoneY + safeZoneH + 0.07;
-                    w = safeZoneW * 0.109375;
-                    h = safeZoneH * 0.06111112;
-                    style = 0+2;
-                    text = "00:23:30";
-                    colorBackground[] = {0,0,0,1};
-                    colorText[] = {1,1,1,1};
-                    font = "EtelkaMonospacePro";
-                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
-                    
-                };
-                class displayORBITALTitle
-                {
-                    type = 0;
-                    idc = -1;
-                    x = safeZoneX + safeZoneW + 0.43; 
-                    y = safeZoneY + safeZoneH;
-                    w = safeZoneW * 0.073125;
-                    h = safeZoneH * 0.03666667;
-                    style = 0+2;
-                    text = "ORBITAL WINDOW";
-                    colorBackground[] = {0,0,0,1};
-                    colorText[] = {1,1,1,1};
-                    font = "LucidaConsoleB";
-                    sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.5);
-                    
-                };
+                /* class displayORBITAL */
+                // {
+                //     type = 0;
+                //     idc = -1;
+                //     x = safeZoneX + safeZoneW + 0.43;
+                //     y = safeZoneY + safeZoneH + 0.07;
+                //     w = safeZoneW * 0.109375;
+                //     h = safeZoneH * 0.06111112;
+                //     style = 0+2;
+                //     text = "00:23:30";
+                //     colorBackground[] = {0,0,0,1};
+                //     colorText[] = {1,1,1,1};
+                //     font = "EtelkaMonospacePro";
+                //     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+                //
+                // };
+                // class displayORBITALTitle
+                // {
+                //     type = 0;
+                //     idc = -1;
+                //     x = safeZoneX + safeZoneW + 0.43;
+                //     y = safeZoneY + safeZoneH;
+                //     w = safeZoneW * 0.073125;
+                //     h = safeZoneH * 0.03666667;
+                //     style = 0+2;
+                //     text = "ORBITAL WINDOW";
+                //     colorBackground[] = {0,0,0,1};
+                //     colorText[] = {1,1,1,1};
+                //     font = "LucidaConsoleB";
+                //     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.5);
+                //
+                /* }; */
             };
         };
         
@@ -946,38 +946,38 @@ class simtac
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
 			
 		};
-		class btnSatMapTI
-		{
-			type = 1;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.91375;
-			y = safeZoneY + safeZoneH * 0.18333334;
-			w = safeZoneW * 0.0325;
-			h = safeZoneH * 0.05;
-			style = 0+2;
-			text = "TI";
-			borderSize = 0;
-			colorBackground[] = {0.6745,0.6745,0.6745,1};
-			colorBackgroundActive[] = {1,0,0,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
-			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorFocused[] = {0.2,0.2,0.2,1};
-			colorShadow[] = {0,0,0,1};
-			colorText[] = {0,0,0,1};
-			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.002;
-			offsetY = 0.002;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
-			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
-			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
-			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[4] call simtac_fnc_adjustCamera";
-
-		};
+		/* class btnSatMapTI */
+		// {
+		//     type = 1;
+		//     idc = -1;
+		//     x = safeZoneX + safeZoneW * 0.91375;
+		//     y = safeZoneY + safeZoneH * 0.18333334;
+		//     w = safeZoneW * 0.0325;
+		//     h = safeZoneH * 0.05;
+		//     style = 0+2;
+		//     text = "TI";
+		//     borderSize = 0;
+		//     colorBackground[] = {0.6745,0.6745,0.6745,1};
+		//     colorBackgroundActive[] = {1,0,0,1};
+		//     colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+		//     colorBorder[] = {0,0,0,0};
+		//     colorDisabled[] = {0.2,0.2,0.2,1};
+		//     colorFocused[] = {0.2,0.2,0.2,1};
+		//     colorShadow[] = {0,0,0,1};
+		//     colorText[] = {0,0,0,1};
+		//     font = "PuristaMedium";
+		//     offsetPressedX = 0.01;
+		//     offsetPressedY = 0.01;
+		//     offsetX = 0.002;
+		//     offsetY = 0.002;
+		//     sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+		//     soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+		//     soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+		//     soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+		//     soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+		//     onButtonClick = "[4] call simtac_fnc_adjustCamera";
+        //
+		/* }; */
 		class btnSatMapNRM
 		{
 			type = 1;

@@ -7,7 +7,7 @@ switch (_command) do
 {
     case "CenterOn":
     {
-        PXS_SatelliteTarget setPos (getPos PXS_SatelliteTarget);
+        PXS_SatelliteTarget setPos (getPos player);
         call simtac_fnc_updateCamera;
     };
     

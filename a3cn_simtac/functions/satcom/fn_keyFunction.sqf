@@ -16,21 +16,21 @@ switch (_keyCode) do
 	{
 		[2] call simtac_fnc_adjustCamera;
 	};
-	case 3://2 thermograph
-	{
-		[3] call simtac_fnc_adjustCamera;
-	};
-	case 4://3 white is hot
-	{
-		[4] call simtac_fnc_adjustCamera;
-	};
-	case 5://4 black is hot
-	{
-		[5] call simtac_fnc_adjustCamera;
-	};
+   /*  case 3://2 thermograph */
+	/* { */
+	/*     [3] call simtac_fnc_adjustCamera; */
+	/* }; */
+	/* case 4://3 white is hot */
+	/* { */
+	/*     [4] call simtac_fnc_adjustCamera; */
+	/* }; */
+	/* case 5://4 black is hot */
+	/* { */
+	/*     [5] call simtac_fnc_adjustCamera; */
+	/* }; */
 	case 50://M redefine default satellite position
 	{
-	//	call PXS_redefineDefaultPos;
+		call simtac_fnc_redefinePosition;
 	};
 	default
 	{
