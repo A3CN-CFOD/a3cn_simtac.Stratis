@@ -1,5 +1,5 @@
 PXS_movementDelta = 5;
-PXS_SatelliteInitialHeight = 800; //height of camera
+PXS_SatelliteInitialHeight = 1800; //height of camera
 PXS_SatelliteFOV = 0.2; //default FOV 
 PXS_SatelliteZoom = 39.7; //default in zoom range
 PXS_SatelliteNorthMovementDelta = 0;

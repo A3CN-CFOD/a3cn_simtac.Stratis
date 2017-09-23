@@ -116,7 +116,7 @@ class simtac
                 {
                     type = 0;
                     idc = -1;
-                    x = safeZoneX + safeZoneW - 0.05; 
+                    x = safeZoneX + safeZoneW + 0.43; 
                     y = safeZoneY + safeZoneH + 0.07;
                     w = safeZoneW * 0.109375;
                     h = safeZoneH * 0.06111112;
@@ -132,7 +132,7 @@ class simtac
                 {
                     type = 0;
                     idc = -1;
-                    x = safeZoneX + safeZoneW - 0.05; 
+                    x = safeZoneX + safeZoneW + 0.43; 
                     y = safeZoneY + safeZoneH;
                     w = safeZoneW * 0.073125;
                     h = safeZoneH * 0.03666667;

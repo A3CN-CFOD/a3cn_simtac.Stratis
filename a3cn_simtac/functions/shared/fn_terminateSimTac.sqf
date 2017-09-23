@@ -1,6 +1,8 @@
 disableSerialization;
 
 setViewDistance PXS_ViewDistance;
+setObjectViewDistance [PXS_ViewDistance,PXS_ViewDistance];
+
 
 [1] call simtac_fnc_adjustCamera;
 

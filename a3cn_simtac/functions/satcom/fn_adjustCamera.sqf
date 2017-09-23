@@ -5,25 +5,34 @@ _type = _this select 0;
 // PP effects
 if (_type == 1) then
 {
-    ppEffectDestroy PXS_ppGrain;
+    ppEffectDestroy PP_film;
+    ppEffectDestroy PP_dynamic;
+
 };
 
 if (_type == 2) then
 {
-	camUseNVG false;
-    PXS_ppGrain = ppEffectCreate ["filmGrain",2005];
-	PXS_ppGrain ppEffectEnable true;
-	PXS_ppGrain ppEffectAdjust [0.02,1,1,0,1];
-	PXS_ppGrain ppEffectCommit 0;
+	
+    ppEffectDestroy PP_dynamic;
+    
+    camUseNVG false;
+    PP_film = ppEffectCreate ["filmGrain",2005];
+	PP_film ppEffectEnable true;
+	PP_film ppEffectAdjust [0.02,1,1,0,1];
+	PP_film ppEffectCommit 0;
+
 
 };
 if (_type == 6) then
 {
-	PXS_ppGrain = ppEffectCreate ["filmGrain",2005];
-	PXS_ppGrain ppEffectEnable true;
-	PXS_ppGrain ppEffectAdjust [0.02,1,1,0,1];
-	PXS_ppGrain ppEffectCommit 0;
-
+    PP_dynamic = ppEffectCreate ["DynamicBlur",500];
+    PP_dynamic ppEffectEnable true;
+    PP_dynamic ppEffectAdjust [0.55];
+    PP_dynamic ppEffectCommit 0;
+    PP_film = ppEffectCreate ["FilmGrain",2005];
+    PP_film ppEffectEnable true;
+    PP_film ppEffectAdjust [0.73,0.86,1.01,0.24,0.25,true];
+    PP_film ppEffectCommit 0;
 };
 
 

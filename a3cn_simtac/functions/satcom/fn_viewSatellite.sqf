@@ -5,6 +5,7 @@ PXS_SatelliteActive = true; //SATCOM is activated
 //set view distance
 PXS_ViewDistance = viewDistance;
 setViewDistance PXS_ViewDistanceNew;
+setObjectViewDistance [PXS_ViewDistanceNew,800];
 
 //view dialog interface
 //PXS_SatelliteDialog = createDialog "PXS_RscSatellite";
