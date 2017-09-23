@@ -1,0 +1,3 @@
+arrUAV = [];
+
+allowedUAVs = 2;

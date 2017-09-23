@@ -10,6 +10,9 @@ class CfgFunctions
 		{
 			file = "a3cn_simtac\functions\support";
 			class createNewUAV{};
+            class initVars{
+                postInit = 1;
+            };
         };
         class satcom
         {

@@ -13,16 +13,18 @@
 
 params["_positionFromMap"];
 
+
+
+
+if (count arrUAV < allowedUAVs) then {
+
 _position = _positionFromMap ctrlMapScreenToWorld [ (_this select 2), (_this select 3) ];
-
-
 
 _randomnumber = floor random 100000;
 _name = "UAV" + (str _randomnumber);
 _markerstr = createMarkerLocal [_name, [_position select 0, _position select 1]];
 _markerstr setMarkerShapeLocal "ICON";
 _markerstr setMarkerTypeLocal "SELECT";
-
 
 _dir = random 360;
 _radius = 1000;
@@ -37,5 +39,19 @@ _uav flyInHeight _height;
 _uavGroup = group _uav;
 _wp =_uavGroup addWaypoint [_position, 0];
 _wp setWaypointType "LOITER";
+
+arrUAV pushBack [_name];
+
+_uav setVariable ["uavName",_name, false];
+
+_uav addEventHandler ["Killed", {
+    arrUAV deleteAt (arrUAV find [(_this select 0) getVariable ["uavName",nil]]); 
+    deleteMarkerLocal ((_this select 0) getVariable ["uavName",nil]);
+}];
+
+
+} else {
+    hint "Você já tem drone no ar"; //TODO
+};
 
 
