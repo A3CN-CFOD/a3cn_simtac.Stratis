@@ -1,6 +1,6 @@
 #include "UI\simTac.h"
 #include "UI\CustomControlClasses.h"
-
+#include "\a3\editor_f\Data\Scripts\dikCodes.h"
 
 class CfgFunctions
 {
@@ -38,7 +38,11 @@ class CfgFunctions
         class shared
 		{
 			file = "a3cn_simtac\functions\shared";
-			class dialogControl{};
+			class keyManager{
+                postInit = 1
+            };
+            class handleTablet{};
+            class dialogControl{};
             class terminateSimTac{};
         };
 
